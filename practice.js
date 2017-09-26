@@ -8,6 +8,12 @@
 
   //Code here
 
+  var me = {
+    name: "Brody",
+    age: 21
+  };
+
+alert(me.name)
 
 
 
@@ -22,7 +28,14 @@
 
   //Code here
 
-
+var favoriteThings = {
+  band: "$uicideboy$",
+  food: "noodles",
+  person: "hot moms",
+  book: "horror/sci-fi",
+  movie: "inception",
+  holiday: "weekends"
+}
 
 
 
@@ -32,13 +45,15 @@
 
   //Code here
 
-
+favoriteThings.car = "tesla"
+favoriteThings.brand = "Designaaa"
 
 
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
-  //Code here
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 
@@ -61,13 +76,18 @@ that is named color, with the value being the color of your backpack.
   //Code here
 
 
+var backPack = {
 
+}
 
+var item = "firstPocket"
+
+backPack[item] = "chapstick"
 
 
 //After you do the above, alert your entire backPack object.
 
-  //Code here
+alert(backPack)
 
  
 
@@ -79,7 +99,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
-
+console.log(backPack)
 
 
 
@@ -101,6 +121,8 @@ var user2 = {
 
   //Code Here
 
+  user2.name = 'Tyler S. McGinnis'
+  user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -123,7 +145,7 @@ var user2 = {
 
   //Code Here
 
-
+var methodCollection = {}
 
 
 /*
@@ -133,7 +155,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
-
+methodCollection.alertHello = function(){alert('hello')}
+methodCollection.logHello = function(){console.log('hello')}
 
 
 
@@ -144,7 +167,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -159,7 +183,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
   //Code Here
 
 
-
+function makePerson(name, birthday, ssn){
+  var person = {};
+  person.name = name;
+  person.birthday = birthday;
+  person.ssn = ssn;
+  return person;
+}
 
 
   
@@ -173,4 +203,10 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  var card = {};
+  card.cardNumber = cardNumber;
+  card.expirationDate = expirationDate;
+  card.securityCode = securityCode;
+  return card;
+}
